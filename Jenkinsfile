@@ -1,13 +1,13 @@
 pipeline {
-    triggers {
-        cron '* * * * *'
-    }
+    // triggers {
+    //     cron '* * * * *'
+    // }
     agent any
 
     stages {
         stage('Clone') {
-                
-        echo "Cloning stage"
+            steps {
+                echo 'Cloning stage'
        
         // REMOVE PREVIOUS FILE
         //sh "rm -rf ${projectFolder}"
@@ -15,6 +15,8 @@ pipeline {
         // cmd "cd C:\Users\user\Documents\Projects\sample"
         // cmd "rd /s jenkins-startup"
         // cmd "git clone https://github.com/shiloyuval/jenkins-startup.git"
+            }
+        
         }
 
         stage('Build') {

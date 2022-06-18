@@ -8,9 +8,7 @@ pipeline {
         stage('Clone') {
             steps {
                 echo 'Cloning stage'
-                cmd "cd C:/Users/user/Documents/Projects/sample"
-                cmd "rd /s jenkins-startup"
-                cmd "git clone https://github.com/shiloyuval/jenkins-startup.git"
+                cmd "cd C:/Users/user/Documents/Projects/sample && rd /s jenkins-startup && git clone https://github.com/shiloyuval/jenkins-startup.git"
             }
         }
 

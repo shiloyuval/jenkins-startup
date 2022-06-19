@@ -12,7 +12,7 @@ pipeline {
                 echo "git clone https://github.com/shiloyuval/jenkins-startup.git"
                 echo "C:/Users/user/Documents/Projects/sample && rd /s /q A"
                 echo "cd c:\\qa\\bin"
-                echo bat "cd C:/Users/user/Documents/Projects/sample && rd /s /q A"
+                echo "cd C:/Users/user/Documents/Projects/sample && rd /s /q A"
                 echo "cd C:/Users/user/Documents/Projects/sample && git clone https://github.com/shiloyuval/jenkins-startup.git"
             }
         }
